@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Monaco Finances</title>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#d81e2c"></rect><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="700" fill="#fff">MF</text></svg></template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3f4f6;color:#0f1420;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#d81e2c;text-decoration:none}
+a:hover{color:#a8141f}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="background:#121829;position:sticky;top:0;z-index:10;border-bottom:1px solid #222b45">
+  <div style="max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:12px;flex-shrink:0">
+      <img src="assets/logo-red.png" alt="Monaco Finances" style="width:38px;height:38px;border-radius:9px">
+      <div style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="color:#fff;font-size:17px;letter-spacing:0.04em;font-weight:500;white-space:nowrap">MONACO FINANCES</span>
+        <span style="color:#8a93a8;font-size:12px">by Projex Consulting</span>
+      </div>
+    </div>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2.2vw,28px);flex-wrap:wrap;margin-left:auto">
+      <a href="#vantagens" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Vantagens</a>
+      <a href="#recursos" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Recursos</a>
+      <a href="#modulos" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Módulos</a>
+      <a href="#comparativo" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Comparativo</a>
+      <a href="#planos" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Planos</a>
+      <a href="#faq" style="color:#c3c9d6;font-size:14px;white-space:nowrap" style-hover="color:#fff">Dúvidas</a>
+      <a href="#planos" style="background:#d81e2c;color:#fff;font-size:14px;font-weight:500;padding:9px 16px;border-radius:6px;white-space:nowrap" style-hover="background:#b8172a;color:#fff">Contratar</a>
+    </nav>
+  </div>
+</header>
+
+<section style="background:#121829;color:#fff;overflow:hidden">
+  <div style="max-width:1240px;margin:0 auto;padding:88px 24px 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#8a93a8;display:flex;align-items:center;gap:8px;border:1px solid #2a3350;padding:6px 12px;border-radius:999px">
+      <span style="width:6px;height:6px;border-radius:50%;background:#2fb67a"></span>GESTÃO FINANCEIRA EMPRESARIAL
+    </div>
+    <h1 style="margin:0;font-size:clamp(38px,5.6vw,68px);line-height:1.04;font-weight:600;letter-spacing:-0.025em;max-width:900px;text-wrap:balance">O resultado da sua empresa, conciliado e claro em uma só tela.</h1>
+    <p style="margin:0;font-size:clamp(16px,1.6vw,19px);line-height:1.55;color:#b4bbcb;max-width:680px;text-wrap:pretty">Financeiro, conciliação bancária, contratos, compras, fiscal e planejamento integrados. Consolide filiais, acompanhe a competência e tome decisões com dados atualizados.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px">
+      <a href="#planos" style="background:#d81e2c;color:#fff;font-weight:500;font-size:15px;padding:14px 24px;border-radius:7px;white-space:nowrap" style-hover="background:#b8172a;color:#fff">Ver planos</a>
+      <a href="#comparativo" style="background:transparent;color:#fff;font-weight:500;font-size:15px;padding:14px 24px;border-radius:7px;white-space:nowrap;border:1px solid #39435f" style-hover="border-color:#8a93a8;color:#fff">Comparar sistemas</a>
+    </div>
+    <div style="margin-top:48px;width:100%;max-width:1120px;border-radius:12px 12px 0 0;border:1px solid #2a3350;border-bottom:none;background:#1a2238;padding:10px 10px 0;box-shadow:0 -20px 80px rgba(216,30,44,0.12)">
+      <div style="display:flex;gap:6px;padding:2px 4px 10px">
+        <span style="width:10px;height:10px;border-radius:50%;background:#39435f"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#39435f"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#39435f"></span>
+      </div>
+      <img src="assets/dashboard.png" alt="Dashboard do Monaco Finances" style="display:block;width:100%;height:auto;border-radius:6px 6px 0 0">
+    </div>
+  </div>
+</section>
+
+<section id="vantagens" style="padding:96px 24px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">VANTAGENS</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Construído para quem fecha o mês com responsabilidade.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+      <sc-for list="{{ advantages }}" as="a" hint-placeholder-count="6">
+        <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="border-color:#cfd3db;box-shadow:0 10px 30px rgba(18,24,41,0.06)">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div style="width:46px;height:46px;border-radius:10px;background:#fdecee;border:1px solid #f7cdd2;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d81e2c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ a.icon }}"></path></svg></div>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6b7386">{{ a.code }}</span>
+          </div>
+          <h3 style="margin:0;font-size:20px;font-weight:600;letter-spacing:-0.01em">{{ a.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668;text-wrap:pretty">{{ a.text }}</p>
+          <div style="display:flex;flex-direction:column;gap:9px;border-top:1px solid #eceef2;padding-top:16px;margin-top:auto">
+            <sc-for list="{{ a.points }}" as="p" hint-placeholder-count="3">
+              <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#3a4152">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>{{ p }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="recursos" style="padding:0 24px 96px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:88px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">DENTRO DO SISTEMA</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Tudo o que o financeiro precisa ver, na primeira tela.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:12px;box-shadow:0 20px 50px rgba(18,24,41,0.08)"><div style="aspect-ratio:790 / 210;border-radius:8px;background-image:url(assets/dashboard.png);background-size:243% auto;background-position:30.1% 23.6%;background-repeat:no-repeat;border:1px solid #eceef2"></div></div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">INDICADORES</span>
+        <h3 style="margin:0;font-size:clamp(24px,2.6vw,32px);line-height:1.15;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Receitas, despesas, resultado e saldo em bancos</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#4f5668;text-wrap:pretty">Os quatro números que definem o mês aparecem no topo do dashboard, com a variação em relação ao período anterior e a quantidade de títulos que formam cada valor.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:6px">
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Variação percentual por indicador</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Títulos da competência contabilizados</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Contas conciliadas no dia</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">FLUXO MENSAL</span>
+        <h3 style="margin:0;font-size:clamp(24px,2.6vw,32px);line-height:1.15;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Receitas x despesas, mês a mês</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#4f5668;text-wrap:pretty">Compare entradas e saídas dos últimos 12 meses em regime de caixa e identifique rapidamente os meses que pressionam o resultado.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:6px">
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Visão de 12 meses</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Regime de caixa ou competência</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Consolidado de todas as filiais</span></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:12px;box-shadow:0 20px 50px rgba(18,24,41,0.08)"><div style="aspect-ratio:945 / 430;border-radius:8px;background-image:url(assets/dashboard.png);background-size:203.2% auto;background-position:34.9% 62.3%;background-repeat:no-repeat;border:1px solid #eceef2"></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:12px;box-shadow:0 20px 50px rgba(18,24,41,0.08)"><div style="aspect-ratio:615 / 430;border-radius:8px;background-image:url(assets/dashboard.png);background-size:312.2% auto;background-position:97.7% 62.3%;background-repeat:no-repeat;border:1px solid #eceef2"></div></div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">CATEGORIAS</span>
+        <h3 style="margin:0;font-size:clamp(24px,2.6vw,32px);line-height:1.15;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Saiba exatamente para onde vai cada real</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#4f5668;text-wrap:pretty">As despesas acumuladas do exercício são agrupadas por categoria do plano de contas, como custo de obra, pessoal, serviços de terceiros e tributos.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:6px">
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Participação de cada categoria</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Acumulado do exercício</span></div>
+          <div style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#3a4152"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2fb67a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Detalhamento a partir do plano de contas</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ showModules }}" hint-placeholder-val="{{ true }}">
+<section id="modulos" style="padding:0 24px 96px">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:12px;position:sticky;top:96px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">MÓDULOS</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Seis módulos, uma única base de dados.</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#4f5668;max-width:460px">Comece pelo financeiro e ative os demais módulos conforme sua operação cresce. Todos compartilham cadastros, plano de contas e filiais.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;overflow:hidden">
+      <sc-for list="{{ modules }}" as="m" hint-placeholder-count="6">
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;padding:22px 24px;border-bottom:1px solid #eceef2;align-items:start">
+          <div style="width:44px;height:44px;border-radius:10px;background:#121829;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ m.icon }}"></path></svg></div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.04em;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">{{ m.name }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#6b7386">{{ m.plans }}</span>
+            </div>
+            <span style="font-size:15px;line-height:1.55;color:#3a4152">{{ m.text }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section id="publico" style="padding:0 24px 96px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">PARA QUEM É</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Do primeiro CNPJ ao grupo com várias filiais.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#121829;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"></path></svg></div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.08em">PEQUENAS EMPRESAS</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Saia da planilha com o plano Basico e organize contas a pagar, a receber e o fluxo de caixa.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#121829;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V10l4-3 4 3v10M12 20V6l4-3 4 3v14"></path></svg></div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.08em">GRUPOS COM FILIAIS</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Consolide o resultado de várias unidades e compare o desempenho de cada filial.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#121829;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9Z"></path></svg></div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.08em">ENGENHARIA E SERVIÇOS</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Acompanhe contratos e projetos com o custo de obra, material e terceiros ligado ao caixa.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#121829;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"></path></svg></div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.08em">CONTROLADORIA</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Feche a competência com bancos conciliados, tributos apurados e orçado x realizado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ showComparison }}" hint-placeholder-val="{{ true }}">
+<section id="comparativo" style="background:#121829;color:#fff;padding:96px 24px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#f0545f">COMPARATIVO</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Por que o Monaco vai além de planilhas e ERPs genéricos.</h2>
+    </div>
+    <div style="overflow-x:auto;border:1px solid #2a3350;border-radius:10px">
+      <div style="min-width:720px">
+        <div style="display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));background:#1a2238;border-bottom:1px solid #2a3350">
+          <div style="padding:18px 24px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#8a93a8">RECURSO</div>
+          <div style="padding:18px 24px;display:flex;align-items:center;gap:10px;background:#222b45;border-top:2px solid #d81e2c">
+            <img src="assets/logo-red.png" alt="" style="width:22px;height:22px;border-radius:5px">
+            <span style="font-weight:600;font-size:15px">Monaco</span>
+          </div>
+          <div style="padding:18px 24px;font-size:15px;color:#b4bbcb">ERP genérico</div>
+          <div style="padding:18px 24px;font-size:15px;color:#b4bbcb">Planilhas</div>
+        </div>
+        <sc-for list="{{ comparison }}" as="r" hint-placeholder-count="8">
+          <div style="display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));border-bottom:1px solid #222b45">
+            <div style="padding:16px 24px;font-size:15px;color:#e3e6ee">{{ r.label }}</div>
+            <div style="padding:16px 24px;background:#1a2238;display:flex;align-items:center;gap:8px;font-size:14px;color:#fff">
+              <span style="width:18px;height:18px;border-radius:50%;background:#d81e2c;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#fff">✓</span>{{ r.monaco }}
+            </div>
+            <div style="padding:16px 24px;font-size:14px;color:#8a93a8;font-family:'IBM Plex Mono',monospace">{{ r.erp }}</div>
+            <div style="padding:16px 24px;font-size:14px;color:#8a93a8;font-family:'IBM Plex Mono',monospace">{{ r.sheet }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section id="implantacao" style="padding:96px 24px 0">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">IMPLANTAÇÃO</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Do contrato ao primeiro fechamento em quatro etapas.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid #e4e6eb;border-radius:12px;background:#fff;overflow:hidden">
+      <div style="padding:28px;display:flex;flex-direction:column;gap:14px;border-right:1px solid #eceef2;border-bottom:1px solid #eceef2">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="width:36px;height:36px;border-radius:50%;background:#d81e2c;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">01</span>
+          <span style="flex:1;height:1px;background:#e4e6eb"></span>
+        </div>
+        <h3 style="margin:0;font-size:19px;font-weight:600">Diagnóstico</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Entendemos sua estrutura de empresas, filiais, contas bancárias e plano de contas.</p>
+      </div>
+      <div style="padding:28px;display:flex;flex-direction:column;gap:14px;border-right:1px solid #eceef2;border-bottom:1px solid #eceef2">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="width:36px;height:36px;border-radius:50%;background:#d81e2c;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">02</span>
+          <span style="flex:1;height:1px;background:#e4e6eb"></span>
+        </div>
+        <h3 style="margin:0;font-size:19px;font-weight:600">Configuração</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Configuramos o plano escolhido e importamos clientes, fornecedores e saldos iniciais.</p>
+      </div>
+      <div style="padding:28px;display:flex;flex-direction:column;gap:14px;border-right:1px solid #eceef2;border-bottom:1px solid #eceef2">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="width:36px;height:36px;border-radius:50%;background:#d81e2c;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">03</span>
+          <span style="flex:1;height:1px;background:#e4e6eb"></span>
+        </div>
+        <h3 style="margin:0;font-size:19px;font-weight:600">Treinamento</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">Sua equipe aprende a lançar, conciliar e fechar a competência no Monaco.</p>
+      </div>
+      <div style="padding:28px;display:flex;flex-direction:column;gap:14px;border-right:1px solid #eceef2;border-bottom:1px solid #eceef2">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="width:36px;height:36px;border-radius:50%;background:#d81e2c;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">04</span>
+          <span style="flex:1;height:1px;background:#e4e6eb"></span>
+        </div>
+        <h3 style="margin:0;font-size:19px;font-weight:600">Acompanhamento</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#4f5668">A Projex Consulting acompanha os primeiros fechamentos e ajusta o que for preciso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planos" style="padding:96px 24px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">PLANOS</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Escolha o plano para o tamanho da sua operação.</h2>
+      <p style="margin:0;font-size:16px;color:#4f5668">Valores mensais por empresa.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:stretch">
+
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;letter-spacing:0.04em">BASICO</span>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#4f5668;min-height:48px">Gestão financeira essencial para pequenas empresas.</p>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;font-family:'IBM Plex Mono',monospace">
+          <span style="font-size:40px;font-weight:500;letter-spacing:-0.02em">R$ 49,90</span>
+          <span style="font-size:14px;color:#6b7386">/mês</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;border-top:1px solid #eceef2;padding-top:20px;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6b7386">MÓDULOS INCLUSOS</span>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">FINANCEIRO</span>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6b7386;margin-top:10px">RECURSOS</span>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <sc-for list="{{ basicFeatures }}" as="f" hint-placeholder-count="5">
+              <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#3a4152">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d81e2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>{{ f }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <a href="#contato" style="text-align:center;border:1px solid #cfd3db;color:#0f1420;font-weight:500;font-size:15px;padding:13px;border-radius:7px" style-hover="border-color:#0f1420;color:#0f1420">Assinar Basico</a>
+      </div>
+
+      <div style="background:#121829;color:#fff;border:1px solid #121829;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:24px;position:relative;box-shadow:0 24px 60px rgba(18,24,41,0.25)">
+        <span style="position:absolute;top:-12px;left:32px;background:#d81e2c;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;padding:5px 10px;border-radius:5px">MAIS ESCOLHIDO</span>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;letter-spacing:0.04em">PRO</span>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#b4bbcb;min-height:48px">Financeiro com conciliação bancária e gestão de contratos.</p>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;font-family:'IBM Plex Mono',monospace">
+          <span style="font-size:40px;font-weight:500;letter-spacing:-0.02em">R$ 249,90</span>
+          <span style="font-size:14px;color:#8a93a8">/mês</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;border-top:1px solid #2a3350;padding-top:20px;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#8a93a8">MÓDULOS INCLUSOS</span>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#222b45;border:1px solid #39435f;color:#e3e6ee;padding:4px 9px;border-radius:5px">FINANCEIRO</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#222b45;border:1px solid #39435f;color:#e3e6ee;padding:4px 9px;border-radius:5px">CONCILIACAO</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#222b45;border:1px solid #39435f;color:#e3e6ee;padding:4px 9px;border-radius:5px">CONTRATOS</span>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#8a93a8;margin-top:10px">RECURSOS</span>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <sc-for list="{{ proFeatures }}" as="f" hint-placeholder-count="5">
+              <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#e3e6ee">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f0545f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>{{ f }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <a href="#contato" style="text-align:center;background:#d81e2c;color:#fff;font-weight:500;font-size:15px;padding:13px;border-radius:7px" style-hover="background:#b8172a;color:#fff">Assinar Pro</a>
+      </div>
+
+      <div style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;letter-spacing:0.04em">ENTERPRISE</span>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#4f5668;min-height:48px">Todos os módulos da plataforma.</p>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;font-family:'IBM Plex Mono',monospace">
+          <span style="font-size:40px;font-weight:500;letter-spacing:-0.02em">R$ 499,90</span>
+          <span style="font-size:14px;color:#6b7386">/mês</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;border-top:1px solid #eceef2;padding-top:20px;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6b7386">MÓDULOS INCLUSOS</span>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">FINANCEIRO</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">CONCILIACAO</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">CONTRATOS</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">COMPRAS</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">FISCAL</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:#eef0f3;border:1px solid #dfe2e7;color:#3a4152;padding:4px 9px;border-radius:5px">PLANEJAMENTO</span>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6b7386;margin-top:10px">RECURSOS</span>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <sc-for list="{{ entFeatures }}" as="f" hint-placeholder-count="5">
+              <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#3a4152">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d81e2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>{{ f }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <a href="#contato" style="text-align:center;border:1px solid #cfd3db;color:#0f1420;font-weight:500;font-size:15px;padding:13px;border-radius:7px" style-hover="border-color:#0f1420;color:#0f1420">Assinar Enterprise</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="seguranca" style="background:#121829;color:#fff;padding:96px 24px;margin-bottom:96px">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#f0545f">SEGURANÇA E SUPORTE</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Seus números protegidos e uma equipe ao seu lado.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+      <div style="background:#1a2238;border:1px solid #2a3350;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#d81e2c;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg></div>
+        <h3 style="margin:0;font-size:18px;font-weight:600">Perfis de acesso</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#b4bbcb">Cada usuário vê apenas os módulos e filiais liberados para a sua função.</p>
+      </div>
+      <div style="background:#1a2238;border:1px solid #2a3350;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#d81e2c;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"></path></svg></div>
+        <h3 style="margin:0;font-size:18px;font-weight:600">Histórico de alterações</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#b4bbcb">Lançamentos registram quem criou, alterou ou baixou cada título.</p>
+      </div>
+      <div style="background:#1a2238;border:1px solid #2a3350;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#d81e2c;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path></svg></div>
+        <h3 style="margin:0;font-size:18px;font-weight:600">Suporte especializado</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#b4bbcb">Atendimento da Projex Consulting, que conhece o sistema e a rotina financeira.</p>
+      </div>
+      <div style="background:#1a2238;border:1px solid #2a3350;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="width:46px;height:46px;border-radius:10px;background:#d81e2c;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15 6.7L3 16M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M3 21v-5h5"></path></svg></div>
+        <h3 style="margin:0;font-size:18px;font-weight:600">Atualizações contínuas</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#b4bbcb">Novos recursos chegam ao sistema sem reinstalação e sem custo de versão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding:0 24px 96px">
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#d81e2c">PERGUNTAS FREQUENTES</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-0.02em;text-wrap:balance">Dúvidas antes de contratar.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <sc-for list="{{ faq }}" as="q" hint-placeholder-count="5">
+        <div style="background:#fff;border:1px solid #e4e6eb;border-radius:10px;overflow:hidden">
+          <button onClick="{{ q.toggle }}" style="all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-size:16px;font-weight:500;color:#0f1420">
+            <span>{{ q.q }}</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#d81e2c;flex-shrink:0">{{ q.sign }}</span>
+          </button>
+          <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;padding:0 24px 20px;font-size:15px;line-height:1.6;color:#4f5668;text-wrap:pretty">{{ q.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="contato" style="padding:0 24px 96px">
+  <div style="max-width:1240px;margin:0 auto;background:#d81e2c;border-radius:14px;padding:clamp(36px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+      <img src="assets/logo-light.png" alt="" style="width:72px;height:72px;border-radius:16px">
+      <div style="display:flex;flex-direction:column;gap:8px;max-width:560px">
+        <h2 style="margin:0;color:#fff;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:600;letter-spacing:-0.02em">Feche o próximo mês com o Monaco.</h2>
+        <p style="margin:0;color:#fff;font-size:16px;line-height:1.5">Fale com a Projex Consulting e agende uma demonstração.</p>
+      </div>
+    </div>
+    <a href="mailto:contato@projexsystem.com" style="background:#fff;color:#121829;font-weight:600;font-size:15px;padding:14px 24px;border-radius:7px;white-space:nowrap" style-hover="background:#121829;color:#fff">Agendar demonstração</a>
+  </div>
+</section>
+
+<footer style="background:#121829;color:#8a93a8;margin-top:auto">
+  <div style="max-width:1240px;margin:0 auto;padding:28px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo-red.png" alt="" style="width:24px;height:24px;border-radius:6px">
+      <span style="color:#fff;letter-spacing:0.04em">MONACO FINANCES</span>
+    </div>
+    <span style="font-family:'IBM Plex Mono',monospace">Projex Consulting · v 1.0</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showModules&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showComparison&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { open: 0 };
+  renderVals() {
+    const I = {
+      layers: 'M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5',
+      bank: 'M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3',
+      chart: 'M3 3v18h18M7 16v-5M12 16V8M17 16v-8',
+      file: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M9 13h6M9 17h6',
+      receipt: 'M4 2v20l3-2 3 2 3-2 3 2 3-2 1 1V2l-1 1-3-2-3 2-3-2-3 2-3-2ZM8 8h8M8 12h8M8 16h5',
+      target: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z',
+      wallet: 'M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0 0 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5M16 14h.01',
+      refresh: 'M21 12a9 9 0 0 1-15 6.7L3 16M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M3 21v-5h5',
+      cart: 'M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4ZM3 6h18M16 10a4 4 0 0 1-8 0'
+    };
+    const faqData = [
+      { q: 'Posso mudar de plano depois?', a: 'Sim. Você pode migrar entre Basico, Pro e Enterprise a qualquer momento. Os módulos novos são ativados sobre os mesmos dados, sem retrabalho.' },
+      { q: 'Como funciona a implantação?', a: 'A Projex Consulting configura o plano de contas, as filiais e as contas bancárias junto com a sua equipe e importa os cadastros de clientes e fornecedores.' },
+      { q: 'O sistema atende empresas com várias filiais?', a: 'Sim. Todos os planos trabalham com filiais e o dashboard mostra o resultado consolidado ou por filial.' },
+      { q: 'Quais bancos são aceitos na conciliação?', a: 'A conciliação trabalha com a importação de extratos bancários e associa cada movimento aos títulos a pagar e a receber.' },
+      { q: 'Meus dados ficam seguros?', a: 'O acesso é feito por usuário, com perfis por função, e cada lançamento fica registrado com o responsável e a data.' }
+    ];
+    return {
+      faq: faqData.map((f, i) => ({ ...f, open: this.state.open === i, sign: this.state.open === i ? '−' : '+', toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i })) })),
+      basicFeatures: ['Contas a pagar e a receber', 'Plano de contas e lançamentos', 'Cadastro de clientes, fornecedores e filiais', 'Recibos e fluxo de caixa', 'Dashboard de resultado do exercício'],
+      proFeatures: ['Tudo do Basico', 'Conciliação bancária por extrato', 'Saldo em bancos atualizado diariamente', 'Contratos e projetos com faturamento recorrente', 'Relatórios por contrato e por filial'],
+      entFeatures: ['Tudo do Pro', 'Compras integradas ao contas a pagar', 'Apuração e controle de tributos', 'Orçamento, metas e orçado x realizado', 'Indicadores de desempenho por filial'],
+      showModules: this.props.showModules ?? true,
+      showComparison: this.props.showComparison ?? true,
+      advantages: [
+        { code: '01 · CONSOLIDAÇÃO', icon: I.layers, points: ['Visão consolidada ou por filial','Filtro por competência','Cadastros compartilhados'], title: 'Várias filiais, um resultado', text: 'Consolide receitas, despesas e saldos de todas as filiais por competência, sem exportar e somar planilhas.' },
+        { code: '02 · CONCILIAÇÃO', icon: I.bank, points: ['Importação de extratos','Associação automática a títulos','Saldo conferido por conta'], title: 'Bancos conciliados todos os dias', text: 'Importe extratos e concilie lançamentos com os títulos a pagar e a receber. O saldo em bancos reflete a realidade.' },
+        { code: '03 · RESULTADO', icon: I.chart, points: ['Receitas x despesas mensal','Despesas por categoria','Margem líquida calculada'], title: 'DRE em tempo real', text: 'Receitas, despesas, margem líquida e despesas por categoria atualizados a cada lançamento, no regime de caixa ou competência.' },
+        { code: '04 · CONTRATOS', icon: I.file, points: ['Títulos gerados por contrato','Resultado por projeto','Faturamento recorrente'], title: 'Contratos e projetos ligados ao caixa', text: 'Cada contrato gera seus títulos e mostra o impacto no fluxo de caixa e no resultado do projeto.' },
+        { code: '05 · FISCAL', icon: I.receipt, points: ['Tributos sobre receita','Apuração por competência','Integração com lançamentos'], title: 'Tributos sob controle', text: 'Acompanhe os tributos sobre receita e as obrigações fiscais no mesmo lugar em que você lança as notas.' },
+        { code: '06 · PLANEJAMENTO', icon: I.target, points: ['Metas por plano de contas','Desvios mês a mês','Indicadores prontos'], title: 'Orçado contra realizado', text: 'Defina metas por plano de contas e acompanhe os desvios mês a mês com indicadores prontos.' }
+      ],
+      modules: [
+        { name: 'FINANCEIRO', icon: I.wallet, plans: 'BASICO · PRO · ENTERPRISE', text: 'Contas a pagar e a receber, plano de contas, lançamentos, recibos e fluxo de caixa.' },
+        { name: 'CONCILIACAO', icon: I.refresh, plans: 'PRO · ENTERPRISE', text: 'Importação de extratos e conciliação bancária automática por conta.' },
+        { name: 'CONTRATOS', icon: I.file, plans: 'PRO · ENTERPRISE', text: 'Gestão de contratos e projetos com faturamento recorrente.' },
+        { name: 'COMPRAS', icon: I.cart, plans: 'ENTERPRISE', text: 'Requisições, pedidos e cadastro de fornecedores integrados ao contas a pagar.' },
+        { name: 'FISCAL', icon: I.receipt, plans: 'ENTERPRISE', text: 'Apuração de impostos e controle de tributos sobre receita.' },
+        { name: 'PLANEJAMENTO', icon: I.target, plans: 'ENTERPRISE', text: 'Orçamento, metas e indicadores de desempenho por filial.' }
+      ],
+      comparison: [
+        { label: 'Consolidação de filiais', monaco: 'Nativa', erp: 'Módulo extra', sheet: 'Manual' },
+        { label: 'Conciliação bancária', monaco: 'Automática', erp: 'Parcial', sheet: 'Manual' },
+        { label: 'DRE e resultado em tempo real', monaco: 'Sim', erp: 'Relatório mensal', sheet: 'Não' },
+        { label: 'Contratos ligados ao fluxo de caixa', monaco: 'Sim', erp: 'Parcial', sheet: 'Não' },
+        { label: 'Controle por competência', monaco: 'Sim', erp: 'Sim', sheet: 'Manual' },
+        { label: 'Implantação', monaco: 'Dias', erp: 'Meses', sheet: '—' },
+        { label: 'Módulos sob demanda', monaco: 'Por plano', erp: 'Pacote fechado', sheet: '—' },
+        { label: 'Suporte especializado', monaco: 'Projex Consulting', erp: 'Chamados', sheet: 'Não' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
